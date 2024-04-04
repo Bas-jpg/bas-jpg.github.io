@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: absolute;
+    border-left: 200px solid green;
+    width: 100px;
+    height: 2000px;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    transition: 0.7s;
+}
+
+.logo:hover {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+.startH1 {
+    margin-top: -200px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100px;
+    top: 200px;
+    left: 50px;
+}
+
+button {
+    z-index: 1;
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 0px solid;
+    background-color: darkolivegreen;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+}
