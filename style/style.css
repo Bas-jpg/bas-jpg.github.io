@@ -11,21 +11,15 @@
     --tertiary-color: lightgreen;
 }
 
-body {
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
 .sidebar {
     position: absolute;
+    z-index: -1;
     border-left: 200px solid var(--primary-color);
-    width: 100px;
     height: 2000px;
 }
 
 .logo {
     width: 200px;
-    position: absolute;
     transition: 0.7s;
 }
 
@@ -39,22 +33,14 @@ h1 {
     font-size: 100px;
 }
 
-.start-h1 {
-    margin-top: -200px;
-}
-
 nav {
     position: relative;
-    display: flex;
-    flex-flow: column;
     width: 100px;
-    top: 200px;
     left: 50px;
 }
 
 button {
     z-index: 1;
-    margin-top: 10px;
     width: 100px;
     height: 100px;
     border-radius: 5px;
@@ -68,4 +54,14 @@ button:hover {
     background-color: var(--tertiary-color);
     color: black;
     cursor: pointer;
+}
+
+.first-p {
+    width: 190px;
+    color: white;
+
+}
+
+.first-h {
+    margin-top: -800px;
 }
