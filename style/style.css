@@ -65,3 +65,9 @@ button:hover {
 .first-h {
     margin-top: -800px;
 }
+
+
+/* trying to make custom scrollbar (work in progress) */
+/* body::-webkit-scrollbar {
+    width: 100px;
+} */
