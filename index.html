@@ -14,28 +14,132 @@
     />
     <link rel="stylesheet" href="style/style.css" />
   </head>
+
+
   <body>
-      <div class="container sidebar"></div>
-      <img src="image/logo.png" alt="logo" class="logo" />
-      
-      <p class="first-p mt-5 mx-2">
+    <!-- button that is sticky to the top of the screen so you can always open the sidebar -->
+    <header class="sticky-top">
+      <button class="btn btn-success btn-lg border-0 m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        SIDEBAR
+      </button>
+  </header>
+  <!-- sidebar that is sticky to the left side of the screen -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <!-- image that is the logo of the site -->
+        <a href="#">
+        <img src="image/logo.png" data-bs-dismiss="offcanvas" alt="logo" class="logo w-75" />
+        </a>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mt-5 mx-2">
           dit is de portfolio van Bas van den Berg, in dit portfolio ga ik het
           hebben over mijzelf, hoe u contact met mij opneemt en over de vorige
           projecten die ik al eerder heb gemaakt. Zelf wil ik u uitnodigen om door
           dit portfolio heen te kijken, alvast bedankt.
-        </p>
+        </div>
+        <!-- navigation with all the buttons that go to they'r respective subject -->
+        <nav class="mt-5 d-flex flex-column">
+          <a href="#about-me">
+          <button class="mt-3 p-3 w-50 text-white about-btn" data-bs-dismiss="offcanvas">about me</button>
+        </a>
+
+          <a href="#contact">
+          <button class="mt-3 p-3 w-50 text-white contact-btn" data-bs-dismiss="offcanvas">contact</button>
+        </a>
         
-        <nav class="mt-5">
-
-                <button class="mt-5 about-btn">about me</button>
-                <button class="mt-3 contact-btn">contact</button>
-                <button class="mt-3 project-btn">projecten</button>
-
+          <a href="#projecten">
+          <button class="mt-3 p-3 w-50 text-white project-btn" data-bs-dismiss="offcanvas">projecten</button>
+        </a>
         </nav>
+      </div>
+    </div>
         
         <div class="container-fluid first-h">
           <h1>Bas</h1>
         </div>
+
+
+        <div class="container-fluid">
+          <section id="about-me"></section>
+          <strong>ABOUT ME</strong>
+        </div>
+
+        <div class="container-fluid">
+          <section id="contact"></section>
+          <strong>CONTACT</strong>
+        </div>
+        <!-- this is the projects part with all the projects i have done so far -->
+        <div class="container-fluid">
+          <section id="projecten"></section>
+          <div class="h1 text-center">PROJECTEN</div>
+          <!-- all the cards for the projects with images, text and github links so you can rederect to them -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 col-xl-2 mt-3">
+            <div class="card">
+              <img src="image/escapeRoom.PNG" class="card-img-top" alt="escape room">
+              <div class="card-body">
+                <h5 class="card-title">Escape Room</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Github Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2 mt-3">
+            <div class="card">
+              <img src="image/hogerLager.PNG" class="card-img-top" alt="hoger lager">
+              <div class="card-body">
+                <h5 class="card-title">Hoger Lager</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Github Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2 mt-3">
+            <div class="card">
+              <img src="image/pong.PNG" class="card-img-top" alt="pong">
+              <div class="card-body">
+                <h5 class="card-title">Pong</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Github Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2 mt-3">
+            <div class="card">
+              <img src="image/webcatalogus.PNG" class="card-img-top" alt="webcatalogus">
+              <div class="card-body">
+                <h5 class="card-title">Webcatalogus</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Github Link</a>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-6 col-md-4 col-xl-2 mt-3">
+            <div class="card">
+              <img src="image/whackAMole.PNG" class="card-img-top" alt="whack a Mole">
+              <div class="card-body">
+                <h5 class="card-title">Whack a Mole</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Github Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2 mt-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="FOTO VAN DASHBOARD">
+              <div class="card-body">
+                <h5 class="card-title">Dashboard</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Github Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
