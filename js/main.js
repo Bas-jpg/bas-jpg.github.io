@@ -15,3 +15,9 @@ aboutBtn.addEventListener('click', () => {
  projectBtn.addEventListener('click', () => {
     window.location.replace('http://127.0.0.1:5500/index.html#projecten')
  });
+
+// deze button rederect je naar de portfolio section van de pagina
+ const portfolioBtn = document.querySelector(".portfolio-btn");
+ portfolioBtn.addEventListener('click', () => {
+    window.location.replace('http://127.0.0.1:5500/index.html#about-portfolio')
+ });
