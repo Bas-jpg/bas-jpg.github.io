@@ -58,7 +58,7 @@ button:hover {
 }
 
 .card-body {
-    height: 200px;
+    height: 250px;
 }
 
 .card-btn {
@@ -66,9 +66,26 @@ button:hover {
     bottom: 15px;
 }
 
+.gitBtn {
+    bottom: 60px;
+}
+
 .container-bg {
     background-color: var(--secondary-color);
     padding-bottom: 50px;
+}
+
+.gitBtn:hover:after {
+    z-index: 1;
+    position: absolute;
+    content: attr(title);
+    display: inline-block;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
 }
 
 /* ----------
