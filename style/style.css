@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: green;
-    --secondary-color: darkgreen;
-    --tertiary-color: lightgreen;
+    --primary-color: #008000;
+    --secondary-color: #006400;
+    --tertiary-color: #90ee90;
     /* and success, black and white but those are already in bootstrap */
 }
 
