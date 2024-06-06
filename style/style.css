@@ -110,6 +110,35 @@ body::-webkit-scrollbar {
     background: var(--tertiary-color);
   }
 
+  /* Buttons */
+  ::-webkit-scrollbar-button:single-button {
+    background-color: var(--primary-color);
+    display: block;
+    border-style: solid;
+    height: 14px;
+    width: 20px;
+  }
+
+  /* Up */
+  ::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent var(--secondary-color) transparent;
+  }
+
+  ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent var(--tertiary-color) transparent;
+  }
+  
+  /* Down */
+  ::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: var(--secondary-color) transparent transparent transparent;
+  }
+
+  ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: var(--tertiary-color) transparent transparent transparent;
+  }
+
 /* ----------
 * end scrollbar
 ---------- */
